@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html ng-app ="calc">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" type="text/css" href = "assets/calculator.css">
+        <script type = "text/javascript" src = "assets/angular.min.js"></script>
+        <script type = "text/javascript" src = "assets/calculator.js"></script>
+        <title>drinkwater</title>
+	</head>
+    
+	<body>
+        
+        <div id ="intro">Proper hydration is critical for nearly every bodily function. So, how much water should you be drinking on a daily basis? This hydration calculator may help answer that question. Simply enter your weight, the climate variable and your estmated activity level to see an estimate.</div>
+    
+        <div id = "primary" ng-controller="CalcCtrl">
+            
+            <main>  
+                <h3>drink water</h3>
+                <div class = "quantity">
+                    <p id = "demo">{{empty}}</p>
+                </div>
+                
+            </main>
+            
+            <div class = "subres">
+                <p>{{toOunces}} 8 oz. glasses</p>
+            </div>
+            
+            <form>
+                
+                <section class = "weight">
+                    <h3>body weight</h3>
+                    <p>in lbs.</p>
+                    <input type = "number" ng-change = "calc()" ng-model = "current_lbs" value = "{{current_lbs}}">
+                </section>
+                
+                <section class = "climate">
+                    <h3>climate</h3>
+                    <p>temperature in degrees F.</p>
+                    <select ng-change = "calc()" ng-model= "current_temp" ng-options= "c as c for c in clim_ops">
+                    </select>
+                </section>
+                
+                <section class = "activity">
+                    <h3>activity level</h3>
+                    <select ng-change = "calc()" ng-model= "base_act" ng-options= "o as o for o in act_ops">
+                    </select>
+                </section>
+
+            </form>
+            
+            <div id = "refs">
+                <p>This calulator refers to estimates published by the International Life Sciences Institute in 2005. This project does not, in any way, claim association with the publishers nor with the authors of the particular study being referenced <a href = "http://www.cism-milsport.org/eng/004_SPORT_AND_SCIENCE/articles-and-pdfs/004-hydration.pdf" target="_blank">here.</a></p>
+            </div>
+           
+            
+        </div>
+	</body>
+</html>

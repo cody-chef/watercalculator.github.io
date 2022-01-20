@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,700|Open+Sans+Condensed:700);
 #intro{
     font-family: 'Open Sans', 'sans-serif';
-    color: rgba(0,0,0, .4);
+    color: #76CCF1;
     width: 70%;
     margin-left: 15%;
     margin-top: 30px;
@@ -20,7 +20,7 @@ body {
 } 
 
 #primary main h3 {
-    color: rgba(0,0,0,.125 );
+    color: #76CCF1;
     width: 100%;
     text-align: center;
     font-size: 49px;
@@ -30,7 +30,7 @@ body {
 
 #primary main .quantity { 
     background-color: rgba(0,0,0,.1);
-    color: rgba(0,0,0,-.1); 
+    color: #76CCF1; 
     width: 100%; 
     height: 300px;
     position: relative; 
@@ -75,12 +75,12 @@ body {
     margin-bottom: 30px;
     font-size: 28px; 
     font-weight: 600; 
-    color: rgba(0,0,0,.6);
+    color: #76CCF1;
     
 }
 
 #primary form section {
-    background-color: rgba(100,100,100, .9);
+    background-color: #76CCF1;
     position: relative;
     color: #aaa;
     width: 33.33%;
@@ -111,7 +111,7 @@ body {
 }
 
 #refs{ 
-    color: rgba(0,0,0, .4);
+    color: #76CCF1;
     width: 70%;
     margin-left: 15%;
     position: absolute;

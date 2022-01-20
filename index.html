@@ -31,13 +31,13 @@
                 
                 <section class = "weight">
                     <h3>body weight</h3>
-                    <p>in lbs.</p>
+                    <p>in Kg.</p>
                     <input type = "number" ng-change = "calc()" ng-model = "current_lbs" value = "{{current_lbs}}">
                 </section>
                 
                 <section class = "climate">
                     <h3>climate</h3>
-                    <p>temperature in degrees F.</p>
+                    <p>temperature in degrees C.</p>
                     <select ng-change = "calc()" ng-model= "current_temp" ng-options= "c as c for c in clim_ops">
                     </select>
                 </section>
